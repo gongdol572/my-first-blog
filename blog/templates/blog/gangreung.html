@@ -1,0 +1,135 @@
+{%  load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Clean Blog - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{%  static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jinhae.html">진해</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gangreung.html">강릉</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bongpyeong.html">봉평</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inje.html">인제</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{%  static 'img/gangreung1.jpg' %}')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>강릉을 소개합니다</h1>
+                        <span class="subheading">#주문진 &nbsp;&nbsp; &nbsp;#경포해변</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p >주문진</p>
+                <p>주문진항은 동해안의 대표적인 항구로 유명하다.</p>
+                <p>터미널이 인접해 있어 교통성이 편리해 관광객들이 많이 찾는 장소기이도 하다.</p>
+                <p>주문진 항 바로 옆에는 주문진 해변이 있는데 동해안 만의 푸르름을 간직하고 있고 </p>
+                <p>주변에 많은 상권들이 들어차 있어서 발걸음을 멀리 할 필요없이 싱싱하고 값싼 회를 지척에서 즐길 수 있는 장점이 있다. </p>
+
+                <p>또한 도깨비 촬영지로 유명한 곳이다.</p>
+                <img src ="../../static/img/doggabi.PNG" alt="" style ="margin-bottom: 20px"/>
+                <p> 도깨비 명장면 같은 사진을 찍기 위해 많은 사람들이 줄을 서있다.</p>
+                <img src ="../../static/img/gangreung1.jpg" alt="" style ="margin-bottom: 30px" style = "margin-top: 30px"/>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fiV79tiWjgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>경포해변</p>
+                <p>강원도 강릉시 안현동에 자리한 경포대 해변은 언제나 그렇듯 여름철 최고의 해수욕장중 하나이다.</p>
+
+                <img src ="../../static/img/gangreung2.png" alt="" style ="margin-bottom: 20px" style = "margin-top: 20px"/>
+                <p>무더운 여름철, 대한민국의 젊음을 느끼고 싶다면 부산의 해운대, 강릉의 경포대를 가라는 말이 있다. </p>
+                <p>덕분에 젊은이 들이 많이 몰리면서 가족단위의 관광객들은 고성과 양양의 해수욕장으로 퍼져 나갔다.</p>
+                <div id="daumRoughmapContainer1575301727599" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<a href="https://map.kakao.com/?urlX=920582&urlY=1199745&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="310" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=920582&MY=1199745&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a><div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width:482px;"><strong style="float: left;"><img src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong><div style="float: right;position:relative"><a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=920582&urlY=1199745&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a></div></div>
+
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1575301727599",
+		"key" : "w3om",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src= '{%  static "vendor/jquery/jquery.min.js" %}'></script>
+    <script src='{%  static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}'></script>
+
+    <!-- Custom scripts for this template -->
+    <script src='{% static "js/clean-blog.min.js"%}'></script>
+
+
+
+</body>
+
+</html>

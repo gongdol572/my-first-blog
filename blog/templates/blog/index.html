@@ -1,0 +1,160 @@
+﻿{%  load staticfiles %}
+<!DOCTYPE html>
+<!--표준모드로 설정  -->
+<html lang="en">
+<!-- 웹 접근성 언어를 영어로 설정 -->
+
+<head>
+
+    <meta charset="utf-8">
+     <!-- 웹문서 파일이 웹브라우저에서 표시되는 과정에서 인코딩할때 지정된 문자코드로 인코딩 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 뷰포트 기본으로 width 속성은 뷰포트의 크기를 조정하며, 특정한 숫자를 사용해 width =600 처럼 지정할수도 있고 device-width처럼 특정한 값을 사용할 수 있는데 이는 100% 스케일에서 CSS 픽셀들로 계산된 화면의 폭을 의미한다.-->
+    <!-- initial-scale 속성은 페이지가 처음 로드될 때 줌 레벨을 조정한다. -->
+    <!-- 애플의 safari(사파리) 브라우저에만 영향을 미치는 속성이다. 기본적으로 viewport의 크기보다 보여줘야할 내용이 크면, 보여줘야할 내용을 줄여서라 보여줌을 방지한다.  -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <!--페이지 제목 설정-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href='{% static "vendor/fontawesome-free/css/all.min.css" %}' rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href='{% static "css/clean-blog.min.css" %}' rel="stylesheet">
+ <!--href 링크에 있는 css파일 문서를 스타일 시트로 연결한다. css 문서를 통해 글자 크기나 배경색 등을 설정할 수 있다.-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!--부트스트랩의 메뉴바(네비게이션바 기본형) 부분이다.-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <!--HOME 버튼을 설정한다.-->
+            <!--화면너비가 넓으면 navbar-collapse이 표시되고, navbar-toggle은 숨겨진다.-->
+            <!--화면너비가 작으면 navbar-collapse은 숨겨지고, navbar-toggle은 표시된다. 버튼을 누르면 세로 드롭다운 형식으로 나타난다.-->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jinhae.html">진해</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gangreung.html">강릉</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Bongpyeong.html">봉평</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inje.html">인제</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <!-- 페이지 헤더를 설정한다. -->
+    <header class="masthead" style="background-image: url('{%  static 'img/trap1.jpg' %}')">
+        <div class="overlay"></div>
+        <div class="container">
+             <!--각각의 컨테이너 파일은 CSS파일을 통해 수정할 수 있다.-->
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <!-- 세로 방향으로 레이아웃을 어디에 배치할 것 인지 정한다.-->
+                    <div class="site-heading">
+                        <h1>#여행 #사계절</h1>
+                        <span class="subheading">진해&nbsp;&nbsp; </h2> 강릉&nbsp;&nbsp; 봉평&nbsp;&nbsp; 인제</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <!-- 메인 화면 -->
+    <!--텍스트와 사진을 입력하고 CSS파일을 이용해 폰트나 글자 크기를 수정한다. -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-preview">
+                   <a href="jinhae.html">
+                       <h2 class="post-title">봄 : 진해</h2>
+                            <h3 class="post-subtitle">
+                                벚꽃 축제가 열리는 진해
+                <img src="../../static/img/flower.JPG" alt="" />
+                        </h3>
+                   </a>
+                </div>
+                <hr>
+
+                <div class="post-preview">
+                    <a href="gangreung.html">
+                        <h2 class="post-title">여름 : 강릉</h2>
+                        <h3 class="post-subtitle">
+              경포해수욕장과 도깨비 촬영지 주문진인 있는 강릉
+                          <img src="../../static/img/gangreung1.jpg" alt=""/>
+            </h3>
+                    </a>
+
+                </div>
+                <hr>
+
+
+                <div class="post-preview">
+                    <a href= "Bongpyeong.html">
+                        <h2 class="post-title"> 가을 : 봉평</h2>
+                        <h3 class="post-subtitle">
+              메밀꽃 필 무렵의 원작지인 봉평
+                          <img src="http://img.khan.co.kr/news/2017/08/31/l_2017090101000003000348581.jpg" alt="" />
+                        </h3>
+                    </a>
+
+                </div>
+                <hr>
+
+                <div class="post-preview">
+                    <a href="inje.html">
+                        <h2 class="post-title">겨울 : 인제</h2>
+                        <h3 class="post-subtitle">인제로 방어낚시하러 가자
+                          <img src="../../static/img/injehead.jpg" alt="" />
+                        </h3>
+                    </a>
+
+                </div>
+                <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+<!--위에서 CSS파일과 연결했듯이 자바스크립트 파일하고도 연결한다.-->
+    <!--HTML로는 웹의 내용을 작성하고, CSS로는 웹을 디자인하며, 자바스크립트로는 웹의 동작을 구현할 수 있다.-->
+    <!-- Bootstrap core JavaScript -->
+    <script src= '{% static "vendor/jquery/jquery.min.js" %}'></script>
+    <script src='{% static "vendor/bootstrap/js/bootstrap.bundle.min.js"%}'></script>
+
+    <!-- Custom scripts for this template -->
+    <script src='{% static "js/clean-blog.min.js"%}'></script>
+
+</body>
+
+</html>
